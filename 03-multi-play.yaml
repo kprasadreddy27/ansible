@@ -3,7 +3,7 @@
   connection: local
   tasks:
   - name: "play-1 tasks"
-    debug:
+    ansible.builtin.debug:
       msg:"ply-1 message"
 
 - name: Play-2
