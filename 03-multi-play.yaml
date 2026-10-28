@@ -2,7 +2,19 @@
   hosts: local
   connection: local
   tasks:
-  - name: "play-1 tasks"
+  - name: "play-1 task 1"
     ansible.builtin.debug:
-      msg:"ply-1 message"
+      msg: "ply-1 task 1"
+  - name: "play-1 task 2"
+    ansible.builtin.debug:
+      msg: "ply-1 task 2"
+
+
+- name: Play-2
+  hosts: local
+  connection: local
+  tasks:
+  - name: play-2 tasks
+    debug:
+      msg: "ply-2 message"
 
