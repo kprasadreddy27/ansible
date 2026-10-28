@@ -6,11 +6,3 @@
     ansible.builtin.debug:
       msg:"ply-1 message"
 
-- name: Play-2
-  hosts: local
-  connection: local
-  tasks:
-  - name: "play-2 tasks"
-    debug:
-      msg:"ply-2 message"
-
