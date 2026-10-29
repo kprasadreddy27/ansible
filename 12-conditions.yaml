@@ -1,0 +1,15 @@
+- name: conditions in ansible
+  hosts: local
+  connection: local
+  vars:
+    given_number: 10
+  tasks:
+  - name: check given number is even 
+    debug:
+      msg: given number {{given_number}} is even
+    when given_number % 2 == 0
+
+  - name: Check given number is odd
+    debug:
+      msg: given number {{given_number}} is odd
+    when given_number % 2 != 0
