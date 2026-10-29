@@ -6,5 +6,7 @@
     duration: 10 days
   tasks:
   - name: print variables
+    vars:
+      duration: 7 days
     debug:
       msg: "I am learning {{course}} in {{duration}}."
