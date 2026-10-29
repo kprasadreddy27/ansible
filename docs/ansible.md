@@ -93,7 +93,21 @@ default -> /etc/ansible/ansible.cfg
 2. current working directory
 3. home directory with .ansible.cfg
 4. /etc/ansible/ansible.cfg
+```
 
+if we update below in config.cfg
+```
+ # (pathlist) Comma separated list of Ansible inventory sources
+;inventory=/etc/ansible/hosts
 
+with 
+inventory=inventory.ini
+
+then 
+ansible-playbook -i inventory.ini 09-variables.yaml -e "person_name=prasad"
+
+can be 
+ansible-playbook 09-variables.yaml -e "person_name=prasad"
+```
 
 
