@@ -9,4 +9,4 @@
   - name: print specific value from ansible_facts
     debug:
       msg: |
-      os_family: {{ansible_facts.os_family}}
+        os_family: {{ansible_facts['os_family']}}
