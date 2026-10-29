@@ -28,3 +28,9 @@ ansible all -i <private ip of another server>, -e ansible_user=ec2-user -e ansib
 YAML -> Yet another markup language (DTO - Data Transfer objects)
 ````
 
+Install (nginx) on another server using playbook
+
+```
+ansible-playbook -i inventory.ini -e ansible_username=ec2-user -e ansible_password=DevOps321 04-playbook.yaml
+```
+
