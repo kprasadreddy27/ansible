@@ -1,6 +1,6 @@
 - name: test debug
-  hosts: local
-  connection: local
+  hosts: local # target ansible server itself
+  connection: local # it will not expect credentials
   tasks:
   - name: print hello ansible
     ansible.builtin.debug:

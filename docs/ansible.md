@@ -24,9 +24,9 @@ ansible all -i <private ip of another server>, -e ansible_user=ec2-user -e ansib
 ```
 
 
-````
+```
 YAML -> Yet another markup language (DTO - Data Transfer objects)
-````
+```
 
 Install (nginx) on another server using playbook
 
@@ -49,5 +49,11 @@ File
 prompt
 Play
 Inventory
+```
+
+In Ansible
+
+```
+variables == facts  (01-gather-facts.yaml)
 ```
 
