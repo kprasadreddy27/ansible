@@ -1,0 +1,6 @@
+- name: variables in command line
+  hosts: local
+  tasks:
+  - name: variables from command line
+    debug:
+      msg: "Hi {{persone_name}}"

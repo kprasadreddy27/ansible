@@ -34,3 +34,9 @@ Install (nginx) on another server using playbook
 ansible-playbook -i inventory.ini -e ansible_username=ec2-user -e ansible_password=DevOps321 04-playbook.yaml
 ```
 
+To provide cmd variables
+
+```
+ansible-playbook -i inventory.ini 09-variables.yaml -e "person_name=prasad"
+```
+
