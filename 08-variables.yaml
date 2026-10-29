@@ -1,5 +1,6 @@
 - name: Variables from inventory file
   hosts: frontend
+  become: true
   tasks:
   - name: print variables
     debug:
