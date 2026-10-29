@@ -6,7 +6,10 @@
     prompt: "Please enter username:"
     private: false
 
+  - name: password
+    prompt: "Please enter password:"
+    private: true
   tasks:
   - name: print variables
     debug:
-      msg: "Hi {{username}}"
+      msg: "Hi {{username}} with password {{password}}"
