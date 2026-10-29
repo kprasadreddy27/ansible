@@ -7,7 +7,7 @@
   - name: check given number is even 
     debug:
       msg: given number {{given_number}} is even
-    when given_number % 2 == 0
+    when: given_number % 2 == 0
 
   - name: Check given number is odd
     debug:
