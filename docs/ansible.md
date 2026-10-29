@@ -40,3 +40,14 @@ To provide cmd variables
 ansible-playbook -i inventory.ini 09-variables.yaml -e "person_name=prasad"
 ```
 
+Variables preference:
+
+```
+CMD
+task
+File
+prompt
+Play
+Inventory
+```
+
