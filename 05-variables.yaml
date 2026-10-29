@@ -7,4 +7,4 @@
   tasks:
   - name: print variables
     debug:
-      msg: "I am learning {{ansible}} in {{duration}}."
+      msg: "I am learning {{course}} in {{duration}}."
