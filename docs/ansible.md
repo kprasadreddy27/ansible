@@ -57,3 +57,43 @@ In Ansible
 variables == facts  (01-gather-facts.yaml)
 ```
 
+
+Ansible configuration
+```
+In ansible installed server
+
+cd
+ansible --version
+cat /etc/ansible/ansible.cfg
+To generate example config file , we have cmd in above file.
+
+mkdir ansible-test
+cd ansible-test
+vi ansible.cfg
+copy content which are taken from generated example config file
+
+export ANSIBLE_CONFIG=/home/ec2-user/ansible-test/ansible.cfg
+
+ansible --version
+```
+
+To unset default
+```
+unset ANSIBLE_CONFIG
+then check ansible --version
+```
+
+Ansible configuration priority
+
+```
+configurations in /etc
+default -> /etc/ansible/ansible.cfg
+
+1. ANSIBLE_CONFIG env variable
+2. current working directory
+3. home directory with .ansible.cfg
+4. /etc/ansible/ansible.cfg
+
+
+
+
