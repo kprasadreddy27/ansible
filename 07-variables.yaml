@@ -1,4 +1,4 @@
-- name: print vars from prompt
+- name: Take variables from prompt and print
   hosts: local
   connection: local
   vars_prompt:
