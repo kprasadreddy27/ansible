@@ -14,13 +14,13 @@
       course_name: DevSecOps
       months: 4
     exat_duration_in_months: 4.5
-    tasks:
-    - name: print variable datatype
-      debug:
-        msg: |
-          {{course}} - {{course | type_debug}}
-          {{duration_in_hours}} - {{duration_in_hours | type_debug}}
-          {{is_live_session}} - {{is_live_session | type_debug}}
-          {{topics}} - {{topics | type_debug}}
-          {{more_details}} - {{more_details | type_debug}}
-          {{exat_duration_in_months}} - {{exat_duration_in_months | type_debug}}
+  tasks:
+   - name: print variable datatype
+     debug:
+       msg: |
+         {{course}} - {{course | type_debug}}
+         {{duration_in_hours}} - {{duration_in_hours | type_debug}}
+         {{is_live_session}} - {{is_live_session | type_debug}}
+         {{topics}} - {{topics | type_debug}}
+         {{more_details}} - {{more_details | type_debug}}
+         {{exat_duration_in_months}} - {{exat_duration_in_months | type_debug}}
