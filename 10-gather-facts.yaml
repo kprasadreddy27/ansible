@@ -5,3 +5,8 @@
   - name: print environment variable (ansible_facts)
     debug:
       msg: "{{ansible_facts}}"
+
+  - name: print specific value from ansible_facts
+    debug:
+      msg: |
+      os_family: {{ansible_facts['os_family']}}
