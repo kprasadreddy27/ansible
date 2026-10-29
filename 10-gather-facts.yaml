@@ -10,3 +10,5 @@
     debug:
       msg: |
         os_family: {{ansible_facts['os_family']}}
+        private_id: {{ansible_facts.default_ipv4.address}}
+        private_id: {{ansible_facts['default_ipv4']['address']}}
