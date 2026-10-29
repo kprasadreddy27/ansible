@@ -1,0 +1,10 @@
+- name: test variables
+  hosts: local
+  connection: local
+  vars:
+    course: ansible
+    duration: 10 days
+  tasks:
+  - name: print variables
+    debug:
+      msg: "I am learning {{ansible}} in {{duration}}."
