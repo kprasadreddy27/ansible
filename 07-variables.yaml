@@ -1,0 +1,12 @@
+- name: print vars from prompt
+  hosts: local
+  connection: local
+  vars_prompt:
+  - name: username
+    prompt: "Please enter username:"
+    private: false
+
+  tasks:
+  - name: print variables
+    debug:
+      msg: "Hi {{username}}"
