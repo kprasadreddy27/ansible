@@ -8,11 +8,11 @@
       {name:'mysql', state:'absent'}
     ]
   tasks:
-  - name: install and uninstall
-    package:
-      name: "{{item.name}}"
-      state: "{{item.state}}"
-    loop: "{{packages}}"
+  # - name: install and uninstall
+  #   package:
+  #     name: "{{item.name}}"
+  #     state: "{{item.state}}"
+  #   loop: "{{packages}}"
 
   - name: another way providing list to install and uninstall
     vars:
