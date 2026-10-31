@@ -8,4 +8,4 @@
 
   - name: print cmd cmd_output
     debug:
-      msg: {{cmd_output}}
+      msg: "{{cmd_output}}"
