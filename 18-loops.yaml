@@ -1,0 +1,26 @@
+- name: install some package and uninstall some packages
+  hosts: local
+  become: yes
+  connection: local
+  vars:
+    packages: [
+      {name:"nginx", state:"present"},
+      {name:"mysql", state:"absent"}
+    ]
+  tasks:
+  - name: install and uninstall
+    package:
+      name: "{{item.name}}"
+      state: "{{item.state}}"
+    loop: "{{packages}}"
+
+  tasks:
+  - name: install and uninstall
+    vars:
+    packages:
+    - {name:"htop", state:"absent"}
+    - {name:"net-tools", state:"present"}
+    package:
+      name: "{{item.name}}"
+      state: "{{item.state}}"
+    loop: "{{packages}}"
