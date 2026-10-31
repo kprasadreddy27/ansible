@@ -7,4 +7,4 @@
   - name: print list
     debug:
       msg: {{item}}
-  loop: {{topics}}
+    loop: {{topics}}
