@@ -8,3 +8,12 @@
     debug:
       msg: "{{item}}"
     loop: "{{topics}}"
+
+  - name: print list
+    debug:
+      msg: "{{item}}"
+    loop:
+    - mongodb
+    - redis
+    - mysql
+    - rabbitmq
