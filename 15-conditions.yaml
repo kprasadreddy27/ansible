@@ -1,5 +1,6 @@
 - name: Print operating system
   hosts: local
+  become: yes
   connection: local
   tasks:
   - name: Check os is redhat
