@@ -1,0 +1,8 @@
+- name: create user
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+  - name: create user
+    user:
+      name: prasadreddy
