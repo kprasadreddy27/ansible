@@ -9,8 +9,8 @@
   #   ]
   vars:
     packages:
-    - {name:'htop', state:'absent'}
-    - {name:'net-tools', state:'present'}
+    - {name: 'htop', state: 'absent'}
+    - {name: 'net-tools', state: 'present'}
   tasks:
   # - name: install and uninstall
   #   package:
