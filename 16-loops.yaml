@@ -6,7 +6,7 @@
   tasks:
   - name: print list
     debug:
-      msg: "{{item}}"
+      msg: "{{item}}" # item is a reserved keyword
     loop: "{{topics}}"
 
   - name: print list
