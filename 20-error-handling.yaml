@@ -10,3 +10,8 @@
   - name: print user user_output
     debug:
       msg: "{{user_output}}"
+
+  - name: create user
+    debug:
+      msg: "we will create user"
+    when: user_output.stdout == ''
