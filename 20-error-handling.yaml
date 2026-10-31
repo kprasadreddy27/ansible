@@ -1,0 +1,12 @@
+- name: create user
+  hosts: local
+  connection: local
+  tasks:
+  - name: add user
+    command: id prasad
+    register: user_output
+    ignore_errors: true
+
+  - name: print user user_output
+    debug:
+      msg: "{{user_output}}"
