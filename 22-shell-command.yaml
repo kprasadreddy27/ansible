@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   tasks:
-  - name: shell vs command
+  - name: use filters
     # command: cat /etc/passwd | grep prasad
     shell: cat /etc/passwd | grep prasad
     register: cmd_output
@@ -10,3 +10,11 @@
   - name: print cmd cmd_output
     debug:
       msg: "{{cmd_output}}"
+
+  - name: redirect
+    command: ls -la > /tmp/files.txt
+    register: files_output
+
+  - name: print files output
+    debug:
+      msg: "{{files_output}}"
