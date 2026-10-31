@@ -1,0 +1,9 @@
+- name: test filters
+  hosts: local
+  connection: local
+  vars:
+    name: "prasadreddy"
+  tasks:
+  - name: print default name if name not present
+    debug:
+      msg: {{name | default('prasad')}}
