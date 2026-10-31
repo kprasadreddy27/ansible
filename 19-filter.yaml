@@ -10,9 +10,12 @@
   - name: print default name if name not present
     debug:
       msg: "{{name | split(' ')}}"
-    reserve: name_list
-
+    
   - name: list to string
+    vars:
+      name_list
+      - prasad
+      - reddy
     debug:
       msg: "{{name_list | join(',')}}"
 
