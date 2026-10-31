@@ -13,7 +13,7 @@
     
   - name: list to string
     vars:
-      name_list
+      name_list:
       - prasad
       - reddy
     debug:
