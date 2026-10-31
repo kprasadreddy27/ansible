@@ -1,0 +1,7 @@
+- name: Print operating system
+  hosts: local
+  connection: local
+  tasks:
+  - name: Check os is redhat
+    debug:
+      msg: Os is {{ansible_facts}}
