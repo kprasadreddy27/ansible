@@ -14,7 +14,6 @@
       state: "{{item.state}}"
     loop: "{{packages}}"
 
-  tasks:
   - name: install and uninstall
     vars:
     packages:
