@@ -6,5 +6,5 @@
   tasks:
   - name: print list
     debug:
-      msg: {{item}}
+      msg: "{{item}}"
     loop: topics
