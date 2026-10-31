@@ -29,3 +29,5 @@
   - name: lower & upper filters
     debug:
       msg: "Hi {{name | upper}}"
+
+# https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_filters.html
