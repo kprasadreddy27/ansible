@@ -1,4 +1,4 @@
-- name: shell vs command
+- name: shell vs command ( command will not work for filters and redirects)
   hosts: local
   connection: local
   tasks:
@@ -12,7 +12,8 @@
       msg: "{{cmd_output}}"
 
   - name: redirect
-    command: ls -la > /tmp/files.txt
+    # command: ls -la > /tmp/files.txt
+    shell: ls -la > /tmp/files.txt
     register: files_output
 
   - name: print files output
