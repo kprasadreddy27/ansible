@@ -1,9 +1,13 @@
 - name: test filters
   hosts: local
   connection: local
-  # vars:
-  #   name: "prasadreddy"
+  vars:
+    name: "prasad reddy"
   tasks:
   - name: print default name if name not present
     debug:
       msg: "{{name | default('prasad')}}"
+  - name: print default name if name not present
+    debug:
+      msg: "{{name | aplit(' ')}}"
+
