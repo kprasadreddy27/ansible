@@ -4,8 +4,8 @@
   connection: local
   vars:
     packages: [
-      {name:"nginx", state:"present"},
-      {name:"mysql", state:"absent"}
+      {name:'nginx', state:'present'},
+      {name:'mysql', state:'absent'}
     ]
   tasks:
   - name: install and uninstall
@@ -16,9 +16,9 @@
 
   - name: another way providing list to install and uninstall
     vars:
-    packages:
-    - {name:"htop", state:"absent"}
-    - {name:"net-tools", state:"present"}
+      packages:
+      - {name:'htop', state:'absent'}
+      - {name:'net-tools', state:'present'}
     package:
       name: "{{item.name}}"
       state: "{{item.state}}"
