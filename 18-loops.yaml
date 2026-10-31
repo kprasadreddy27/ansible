@@ -14,7 +14,7 @@
       state: "{{item.state}}"
     loop: "{{packages}}"
 
-  - name: install and uninstall
+  - name: another way providing list to install and uninstall
     vars:
     packages:
     - {name:"htop", state:"absent"}
