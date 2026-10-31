@@ -2,11 +2,15 @@
   hosts: local
   become: yes
   connection: local
+  # vars:
+  #   packages: [
+  #     {name:'nginx', state:'present'},
+  #     {name:'mysql', state:'absent'}
+  #   ]
   vars:
-    packages: [
-      {name:'nginx', state:'present'},
-      {name:'mysql', state:'absent'}
-    ]
+    packages:
+    - {name:'htop', state:'absent'}
+    - {name:'net-tools', state:'present'}
   tasks:
   # - name: install and uninstall
   #   package:
@@ -15,10 +19,6 @@
   #   loop: "{{packages}}"
 
   - name: another way providing list to install and uninstall
-    vars:
-      packages:
-      - {name:'htop', state:'absent'}
-      - {name:'net-tools', state:'present'}
     package:
       name: "{{item.name}}"
       state: "{{item.state}}"
