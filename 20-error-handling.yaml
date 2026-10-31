@@ -12,6 +12,5 @@
       msg: "{{user_output}}"
 
   - name: create user
-    debug:
-      msg: "we will create user"
-    when: user_output.stdout == ''
+    command: useradd prasad
+    when: user_output.rc != 0
