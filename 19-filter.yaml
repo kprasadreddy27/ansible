@@ -2,8 +2,8 @@
   hosts: local
   connection: local
   vars:
-    name="prasadreddy"
+    name: "prasadreddy"
   tasks:
   - name: print default name if name not present
     debug:
-      msg: {{name | default('prasad')}}
+      msg: "{{name | default('prasad')}}"
