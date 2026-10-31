@@ -26,3 +26,6 @@
       msg: "student marks {{marks}}"
     when: "{{marks | int  == 10}}"
 
+  - name: lower & upper filters
+    debug:
+      msg: "Hi {{name | upper}}"
