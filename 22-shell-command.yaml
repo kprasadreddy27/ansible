@@ -1,0 +1,11 @@
+- name: shell vs command
+  hosts: local
+  connection: local
+  tasks:
+  - name: shell vs command
+    command: cat /etc/passwd | grep prasad
+    register: cmd_output
+
+  - name: print cmd cmd_output
+    debug:
+      msg: {{cmd_output}}
