@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    topics=['mongodb', 'redis', 'mysql', 'rabbitmq']
+    topics: ['mongodb', 'redis', 'mysql', 'rabbitmq']
   tasks:
   - name: print list
     debug:
